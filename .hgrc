@@ -1,0 +1,14 @@
+[ui]
+username = Tom Harley <trh@st-andrews.ac.uk>
+verbose = false
+
+[auth]
+label.prefix = trh.hg.cs.st-andrews.ac.uk
+label.username = trh
+label.schemes = https
+
+[tortoisehg]
+postpull = none
+defaultpush = all
+confirmpush = True
+workbench.target-combo = auto

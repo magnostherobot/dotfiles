@@ -1,0 +1,16 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Tom Harley
+	email = trh@st-andrews.ac.uk
+[push]
+	default = simple
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	d = difftool
+	dt = difftool
+[merge]
+	tool = vimdiff

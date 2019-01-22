@@ -1,0 +1,3 @@
+text/html; lynx -dump %s ; copiousoutput; nametemplate=%s.html
+image/*; feh %s ; test= [[ $DISPLAY ]]
+image/*; dotmatrix --mono %s ; copiousoutput

@@ -13,6 +13,7 @@ fi
 
 export LSCOLORS="exgxdxdxcxbxbxcxcxexex"
 export LS_COLORS="di=34:ln=36:so=33:pi=33:ex=32:bd=31:cd=31:su=32:sg=32:tw=34:ow=34"
+export WWW_HOME='google.co.uk'
 export MC_SKIN="$HOME/.mc/solarized.ini"
 
 usable make && export MAKEFLAGS="-j$(nproc)"
@@ -41,13 +42,13 @@ alias ls='ls --color=auto'
 alias ll='ls -l'
 alias lA='ls -A'
 usable cowsay     && alias cowsay=':'
-usable vim        && alias vi='vim'
 usable vim        && alias vim='vim -O'
 usable vim && ! usable view && alias view='vim -R'
 usable hub        && alias git='hub'
 usable lab        && alias git='lab'
 usable acpi       && alias battery='acpi -bi'
 usable apacman    && alias pacman='sudo apacman'
+usable neomutt    && alias mutt='neomutt'
 usable stacscheck && alias sc='stacscheck'
 usable tokei      && alias tokei='tokei -c 80'
 alias java="$JAVACMD"

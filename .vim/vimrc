@@ -36,58 +36,6 @@ let g:vimwiki_list = [{
   \ 'template_ext': '.html',
   \ }]
 
-" " with lightline.vim, I don't need the original modeline:
-" set noshowmode
-
-" " lightline.vim options:
-" let g:lightline = {
-"   \ 'colorscheme': 'powerline',
-"   \ 'subseparator': { 'left': '', 'right': '' },
-"   \ 'active': {
-"   \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename' ] ],
-"   \   'right': [ [], [], [ 'filetype' ] ],
-"   \ },
-"   \ 'inactive': {
-"   \   'left': [ [ 'filename' ] ],
-"   \   'right': [ [], [], [ 'filetype' ] ],
-"   \ },
-"   \ 'tabline': {
-"   \   'left': [ [ 'tabs' ] ],
-"   \   'right': [ [] ],
-"   \ },
-"   \ 'tab': {
-"   \   'active': [ 'filename' ],
-"   \   'inactive': [ 'filename' ],
-"   \ },
-"   \ 'component': {
-"   \   'filetype': '%{&ft!=#"vim"?&ft:""}',
-"   \ },
-"   \ 'component_function': {
-"   \   'filename': 'LightlineFilename',
-"   \ },
-"   \ 'tab_component_function': {
-"   \   'filename': 'LightlineTabName',
-"   \   'filetype': 'LightlineFiletype',
-"   \ },
-"   \ }
-
-" function! LightlineCompose(name, modified)
-"   let name = a:name !=# '' ? a:name : '[No Name]'
-"   let modified = a:modified ? '•' : ''
-"   return name . modified
-" endfunction
-
-" function! LightlineFilename()
-"   return LightlineCompose(expand('%:t'), &modified)
-" endfunction
-
-" function! LightlineTabName(n)
-"   let winnr = tabpagewinnr(a:n)
-"   let buflist = tabpagebuflist(a:n)
-"   let name = expand('#'.buflist[winnr - 1].':t')
-"   let modified = gettabwinvar(a:n, winnr, '&modified')
-"   return LightlineCompose(name, modified)
-" endfunction
 
 set background=dark
 colorscheme elflord

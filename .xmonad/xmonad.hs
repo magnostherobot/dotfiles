@@ -1,7 +1,8 @@
 import XMonad
+import XMonad.Hooks.EwmhDesktops
 
-main = xmonad defaultConfig
-  { modMask = mod4Mask
-  , terminal = "urxvtcd"
-  , borderWidth = 0
-  }
+main = xmonad $ ewmh $ def
+    { terminal = "urxvtcd"
+    , modMask = mod4Mask
+    , borderWidth = 0
+    }

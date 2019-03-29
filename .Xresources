@@ -6,6 +6,7 @@ URxvt.font: xft:ProggySquareTT:size=12, \
   xft:ProggyTinyTT:style=Regular:size=12, \
   xft:DejaVu Sans Mono:antialias=false, \
   xft:mono:medium
+
 URxvt.boldFont:
 
 URxvt.letterSpace: 0

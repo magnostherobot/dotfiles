@@ -2,8 +2,11 @@ runtime! plugin/sensible.vim
 
 set mouse=a
 
+set spelllang=en_gb
+
 syntax enable
 set nowrap
+set nojoinspaces
 
 filetype plugin indent on
 
@@ -33,6 +36,5 @@ let g:vimwiki_list = [{
   \ 'template_ext': '.html',
   \ }]
 
-
 set background=dark
-colorscheme elflord
+colorscheme slate

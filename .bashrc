@@ -51,6 +51,7 @@ usable apacman    && alias pacman='sudo apacman'
 usable neomutt    && alias mutt='neomutt'
 usable stacscheck && alias sc='stacscheck'
 usable tokei      && alias tokei='tokei -c 80'
+usable gdb        && alias gdb='gdb -q'
 alias java="$JAVACMD"
 alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$PWD"
 

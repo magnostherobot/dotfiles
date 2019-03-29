@@ -37,4 +37,4 @@ let g:vimwiki_list = [{
   \ }]
 
 set background=dark
-colorscheme slate
+colorscheme elflord

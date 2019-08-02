@@ -66,19 +66,6 @@ if usable npm; then
   npm-do () { (PATH=$(npm bin):$PATH; eval $@;) }
 fi
 
-# loads nvm on first use of node or npm:
-NVM_DIR="$HOME/.nvm"
-if [ -d "$NVM_DIR" ]; then
-  export NVM_DIR
-  alias load-nvm='echoerr "Initialising nvm..." && \
-    unalias node npm nvm load-nvm npm-do && \. "$NVM_DIR/nvm.sh" \
-    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"'
-  alias node='load-nvm && node'
-  alias npm='load-nvm && npm'
-  alias nvm='load-nvm && nvm'
-  alias npm-do='load-nvm && npm-do'
-fi
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 if usable fzf && usable ag ; then
   export FZF_DEFAULT_COMMAND='ag --nocolor -g ""'
